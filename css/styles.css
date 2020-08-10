@@ -318,22 +318,36 @@ textarea {
 
     transform: translate(42px, 13px);
 }
+.check-box {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/checkbox.svg);
+    transform: translate(-215px, 2px);
+}
+.input-policy:checked ~ span {
+    background-image: url(../images/checked.svg);
+}
+
 .policy {
     letter-spacing: 1.71;
     font-size: 14px;
-    line-height: 24px;
-    
-    
+    line-height: 24px; 
 }
 .input-policy {
     position: absolute;
-    transform: translate(-215px, 5px);
-    width: 16px;
-    height: 15px;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url(../images/checkbox.svg);
+    /* width: 16px;
+    height: 15px; */
 }
-.input-policy:checked {
-    background-color: var(--accent-collor);
-}
+/*  {
+    background-color: var(--accent-collor); */
+
 .policy-link {
     color: var(--accent-collor);
 }
